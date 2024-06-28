@@ -36,4 +36,4 @@ await $`git tag v1`
 await $`git push origin v1`
 await $`git push origin main`
 
-await $`open "https://github.com/eunjae-lee/issue-to-markdown/releases/new"`
+await $`open "https://github.com/MuratovAS/issue-to-markdown/releases/new"`

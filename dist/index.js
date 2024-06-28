@@ -147,10 +147,11 @@ function run() {
             return;
         }
         const { owner, repo } = github.context.repo;
-        const authorizedAuthors = authors && authors.length > 0 ? authors : [owner];
-        if (!authorizedAuthors.includes(github.context.actor)) {
-            core.setFailed('This actor is not authorized to perform this action.');
-            return;
+        if (authors && authors.length > 0) {
+            if (!authors.includes(github.context.actor)) {
+                core.setFailed('This actor is not authorized to perform this action!');
+                return;
+            }
         }
         const response = yield github.getOctokit(token).rest.issues.get({
             owner,

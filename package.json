@@ -1,6 +1,6 @@
 {
   "name": "issue-to-markdown",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "private": true,
   "description": "A GitHub Action to monitor and convert issues into markdown files within your repository.",
   "main": "lib/main.js",
@@ -17,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/eunjae-lee/issue-to-markdown.git"
+    "url": "git+https://github.com/MuratovAS/issue-to-markdown.git"
   },
   "keywords": [
     "actions",
